@@ -1,7 +1,21 @@
+class Media {
+  void play() {
+  print('Playing media...');
+}
+}
+class Song extends Media{
+String artist;
+  song(this.artist);
+
+  @override
+  void play(){
+    print('Playing song by $artist...');
+  }
+}
 void main(){
-  print ('Hello world!');
-  int a=10;
-  int b=20;
-  int result=a+b;
-  print(result);
+  Media media=Media();
+  media.play();
+
+  song artist=song('Arijit Singh');
+  artist.play();
 }
