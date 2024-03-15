@@ -7,7 +7,7 @@ class Media {
 class Song extends Media {
   String artist;
 
-  song(this.artist);
+  Song(this.artist);
 
   @override
   void play() {
@@ -19,6 +19,6 @@ void main() {
   Media media = Media();
   media.play();
 
-  song artist = song('Arijit Singh');
+  Song artist = Song('Arijit Singh');
   artist.play();
 }
