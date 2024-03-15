@@ -1,21 +1,24 @@
 class Media {
   void play() {
-  print('Playing media...');
+    print('Playing media...');
+  }
 }
-}
-class Song extends Media{
-String artist;
+
+class Song extends Media {
+  String artist;
+
   song(this.artist);
 
   @override
-  void play(){
+  void play() {
     print('Playing song by $artist...');
   }
 }
-void main(){
-  Media media=Media();
+
+void main() {
+  Media media = Media();
   media.play();
 
-  song artist=song('Arijit Singh');
+  song artist = song('Arijit Singh');
   artist.play();
 }
